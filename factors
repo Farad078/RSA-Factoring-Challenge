@@ -4,6 +4,8 @@ import sys
 
 # main program
 # function - check
+
+
 def check(x):
     a = []
     y = x
@@ -15,11 +17,12 @@ def check(x):
             break
     print("{:.0f}={:.0f}*{:.0f}".format(y, a[1], a[0]))
 
+
 def run():
     f = open(sys.argv[1], "r")
     lines = f.readlines()
-
     for i in lines:
         check(int(i))
+
 
 run()
